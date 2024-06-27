@@ -1,0 +1,372 @@
+<!-- Js Tasks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+        #animatedObject {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+    .box {
+    background-color: brown;
+}
+
+#reverseStringButto {
+    
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+#showReversedString {
+    display: none;
+}
+
+
+td {
+    padding: 5px
+}
+
+.card {
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card h3 {
+    margin-top: 0; 
+    margin-left: 25%;
+  }
+  
+#userPng {
+    width: 20px;
+    height: 20px;
+}
+.card-section-one{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+#btnone {
+    padding-left: 100px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+#card-footer-two{
+    font-size: 10px;
+    padding-left: 70px;
+} 
+
+.task-eight-box{
+    background-color: rgba(160, 11, 73, 0.529);
+    margin: 0px 25%;
+    width: 500px;
+    height: 700px;
+    border-radius: 10%;
+    border: solid 2px black
+}
+
+.box-content {
+    padding-left: 15%;
+    padding-top: 10%;
+    margin-left: 50px;
+}
+label {
+    display: inline-block;
+  }
+  
+</style>
+</head>
+<body>
+<div class="task-one">
+    <h1>Task 1</h1>
+    <p>Enter The Number You want to reverse</p>    
+    <input type="number" id="originalNumber">
+    <button type="button" class="btn btn-primary" id="reverseNumberButton">Reverse Number</button>
+    <div id="reversedNumberDisplay" style="display: none;">Number String: </div>
+    <br><br>
+</div>
+
+<div class="task-two">
+    <h1>Task 2</h1>
+    <p>Enter The String You want to reverse</p>    
+    <input type="text" id="originalString">
+    <button type="button" class="btn btn-primary" id="reverseStringButton">Reverse String</button>
+    <div id="reversedStringDisplay" style="display: none;">Reversed String: </div>
+    <br><br>
+</div>
+
+<div class="task-three">
+    <h1>Task 3</h1>
+    <p style="display: inline;">1st Number: </p>
+    <input type="number" id="firstNumber" style="display: inline;"><br><br>
+    <p style="display: inline;">2nd Number: </p>
+    <input type="number" id="secondNumber" style="display: inline;"> <br><br>
+    <button id="multiply" style="display: inline;">Multiply</button>
+    <button id="divide" style="display: inline;">Divide</button>
+    <br><br>
+</div>
+
+<div class="task-four">
+    <h1>Task 4</h1>
+    <button id="showDateButton" style="display: inline;">ShowDate</button>
+    <p id="displayDate" style="display:none;"></p>
+    <br><br><br>
+    <button id="showTimeButton" style="display: inline;">Show Time</button>
+    <p id="displayTime" style="display:none;"></p>
+</div>
+<br><br>
+<h1>Task 5</h1>
+<div class="task-five">
+    <table id="taskFiveTable">
+        <tr>
+          <td>First name</td>
+          <td><input type="text" id="fname" required></td>
+        </tr>
+          <td>Email</td>
+          <td><input type="email" id="email" required></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" id="password" required></td>
+        </tr>
+        <tr >
+          <td>Message</td>
+          <td><input type="text" id="Message" required></td>
+        </tr>
+      </table>
+</div>
+<button class="btn btn-info" id="validationButton">Validate</button>
+<br><br><br>
+<div class="task-six">
+    <h1>Task 6</h1><br>
+    <div class="task-six-box">
+
+        <div class="card">
+            <div class="card-content">
+            <h3>Instagram</h3>
+            <div class="card-section-one">
+                <img src="user.png" id="userPng" style="display:inline;">
+                <input type="text" placeholder="Username"></input><br>
+                <img src="lock.png" id="userPng" style="display:inline;">
+                <input type="text" placeholder="Password"><br><br>
+            </div>
+            <div id="btnone">
+                <button class="btn btn-info" id="btnnone" style="display: flex;">Log in</button>
+            </div>
+        </div>
+        <div class="card-footer">
+            <input type="checkbox"> 
+            <p>Remember me</p>
+            <a href="">Forget Password?</a>
+        </div>
+    </div>
+    <p id="card-footer-two">Don't have an Account? <a href="">Sign up Here</a></p>
+</div>
+</div>
+
+<div class="task-seven">    
+    <h1>Task 7</h1>
+    <br>
+    <img src="bike.jpg" id="animationObject">
+    <div class="move-button"><br>
+        <button class="btn btn-primary" id="startButton">Start</button>
+        <button class="btn btn-danger" id="stopButton"> Stop</button>
+    </div>
+</div>
+<br><br>
+
+<div class="task-eight">
+    <h1>Task 8</h1>
+    <div class="task-eight-box">
+        <div class="box-content">
+            <h1>Registration Form</h1><br>
+            <p style="display: inline;">First name: </p> <input type="text" ><br><br>
+            <p style="display: inline;">Last name: </p><input type="text"><br><br>         
+            <p style="display: inline;">Email: </p><input type="email"><br><br>            
+            <p style="display: inline;">Password: </p><input type="password"><br><br>            
+            <p style="display: inline;">Re Enter Password: </p><input type="password"><br> <br>
+            <p>Gender: </p><input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <p style="display: inline;">Age: </p><input type="number"><br><br>                 
+            <p style="display: inline;">Phone Number: </p><input type="number"><br><br>                       
+            <p style="display: inline;">State: </p><input type="text"><br><br>         
+            <input type="checkbox"> Hereby, I declare all the given details are true <br><br>
+            <p style="text-align: left;;">Log in to <a href="">ethnus</a> website</p>
+        </div>
+        <div style="padding-left: 40%;">
+            <button class="btn btn-danger">Register</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //Task One
+document.addEventListener('DOMContentLoaded', () => {
+    const reverseNumberButton = document.getElementById('reverseNumberButton');
+    const originalNumber = document.getElementById('originalNumber');
+    const reversedNumberDisplay = document.getElementById('reversedNumberDisplay')
+    function reverseNumber(num) {
+        const sign = Math.sign(num);
+        num = Math.abs(num);
+        const reversedStr = num.toString().split('').reverse().join('');
+        return parseInt(reversedStr) * sign;
+      }
+    reverseNumberButton.addEventListener('click', () => {
+      const reversedNumber = reverseNumber(originalNumber.value)
+      reversedNumberDisplay.textContent = "Your reversed Number is "+reversedNumber
+      reversedNumberDisplay.style.display = 'block'
+
+    });
+  });
+  
+
+
+
+//Task Two Code
+const orgString = document.getElementById("originalString")
+const reverseStringButton = document.getElementById("reverseStringButton")
+const reversedStringDisplay = document.getElementById('reversedStringDisplay')
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    reverseStringButton.addEventListener('click', ()=>{
+    const reversedString = orgString.value.split('').reverse().join('')
+    reversedStringDisplay.textContent = "Your Reversed String is " +reversedString;
+    reversedStringDisplay.style.display = 'block';
+    })
+    function changeCursorOnHover(){
+        reverseStringButton.style.cursor = 'pointer';
+    }
+    function resetCursor(){
+        reverseStringButton.style.cursor = 'auto';
+    }
+    reverseStringButton.addEventListener('mouseover',changeCursorOnHover)
+    reverseStringButton.addEventListener('mouseout',resetCursor)
+})
+
+//Task Three Code
+document.addEventListener('DOMContentLoaded', ()=>{
+    const multiply = document.getElementById('multiply');
+    const divide = document.getElementById('divide');
+    const firstNumber = document.getElementById('firstNumber');
+    const secondNumber = document.getElementById('secondNumber')
+    multiply.addEventListener('click',()=>{
+    const product = firstNumber.value*secondNumber.value
+    console.log(product)
+    })
+    divide.addEventListener('click',()=>{
+        const quotient = firstNumber.value/secondNumber.value
+        console.log(quotient)
+        })
+
+})
+
+//Task Four Code
+document.addEventListener('DOMContentLoaded',()=>{
+    // Display Date
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString();
+    const displayDate = document.getElementById('displayDate');
+    const showDateButton = document.getElementById('showDateButton');  
+    showDateButton.addEventListener('click',()=>{
+        displayDate.textContent = formattedDate
+        displayDate.style.display = 'inline';
+    })
+
+    //Display Time
+    const hrs = today.getHours().toString()
+    const mins = today.getMinutes().toString()
+    const showTimeButton = document.getElementById('showTimeButton');
+    const displayTime = document.getElementById('displayTime');
+    const formattedTime = `${hrs}:${mins}`;
+    showTimeButton.addEventListener('click',()=>{
+        displayTime.textContent = formattedDate+" "+formattedTime
+        displayTime.style.display = 'inline';
+    })
+})
+
+//Task Five
+const notificationButton = document.getElementById('notificationButton');
+document.addEventListener('DOMContentLoaded',()=>{
+    const fname = document.getElementById('fname').value.trim()
+    const email = document.getElementById('email').value.trim()
+    const password = document.getElementById('password').value.trim()
+    const Message = document.getElementById('Message').value.trim()
+    const validationButton = document.getElementById('validationButton')
+    validationButton.addEventListener('click',()=>{
+        if(fname == ""){
+            alert("Valid Name Must be Entered")
+        }
+        if(email == ""){
+            alert("Valid email Must be Entered")
+        }
+        if(password == ""){
+            alert("Valid password Must be Entered")
+        }
+        if(Message == ""){
+            alert("Valid Message Must be Entered")
+        }
+    })
+})
+
+//Task Seven code 
+document.addEventListener('DOMContentLoaded',()=>{
+       
+    let img;
+        let interval;
+
+        function init() {
+            img = document.getElementById('animationObject');
+            img.style.left = '50px';
+        }
+
+        function start() {
+            if (interval) {
+                return;
+            }
+            interval = setInterval(() => {
+                img.style.left = parseInt(img.style.left) + 10 + 'px';
+                if (parseInt(img.style.left) > window.innerWidth) {
+                    img.style.left = '0px';
+                }
+            }, 100); 
+        }
+
+        function stop() {
+            clearInterval(interval);
+            interval = null;
+        }
+
+        window.onload = init;
+    
+        
+    })
+    </script>
+</body>
+</html>
